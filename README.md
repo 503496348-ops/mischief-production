@@ -1,6 +1,6 @@
 # 🏰 Queendom Skills Pack
 
-**54 个 Hermes Agent 技能，一键部署。**
+**322 个 Hermes Agent 技能，一键部署。**
 
 > 这些技能来自全球顶级开源仓库（obra/superpowers、addyosmani/agent-skills、mattpocock/skills、affaan-m/ECC、ai-website-cloner-template），经过 Hermes 格式适配，可直接被 Hermes Agent 自动发现和加载。
 
@@ -19,7 +19,17 @@ git clone https://github.com/503496348-ops/mischief-production.git /tmp/mischief
 
 ## 📦 包含什么
 
-### 🏗️ 基座层 — sp-*（14个，obra/superpowers ⭐218k）
+| 分类 | 前缀 | 数量 | 来源 | 说明 |
+|------|------|------|------|------|
+| **全局基座** | sp-* | 14 | obra/superpowers ⭐218k | 标准化软件工程全流程：需求→架构→TDD→评审→交付 |
+| **工程增强** | as-* | 24 | addyosmani/agent-skills | 谷歌 Chrome 团队工程规范：API设计、安全、性能、CI/CD |
+| **编码规范** | mp-* | 6 | mattpocock/skills | TS 领域顶级编码规范：领域建模、代码评审、PRD |
+| **全栈专项** | ecc-* | 277 | affaan-m/ECC ⭐ | 全栈最佳实践：后端、前端、数据库、Docker、安全、测试 |
+| **网站克隆** | awc-* | 1 | ai-website-cloner-template | 网站逆向克隆：提取资产、CSS、逐段重建 |
+
+**总计：322 个 skill**
+
+### 🏗️ 基座层 — sp-*（14个）
 
 标准化软件工程全流程，覆盖从需求到交付的每一步。
 
@@ -40,67 +50,31 @@ git clone https://github.com/503496348-ops/mischief-production.git /tmp/mischief
 | sp-using-superpowers | 技能发现的元技能 |
 | sp-writing-skills | 编写和编辑 skill 的规范 |
 
-### 🔧 增强层 — as-*（19个，addyosmani/agent-skills）
+### 🔧 增强层 — as-*（24个）
 
 谷歌 Chrome 团队工程规范，补强架构、安全、性能、CI/CD。
 
-| 技能 | 用途 |
-|------|------|
-| as-api-and-interface-design | API 和接口设计规范 |
-| as-browser-testing-with-devtools | Chrome DevTools 浏览器测试 |
-| as-ci-cd-and-automation | CI/CD 流水线搭建 |
-| as-code-simplification | 代码简化重构 |
-| as-context-engineering | Agent 上下文优化 |
-| as-deprecation-and-migration | 废弃和迁移管理 |
-| as-documentation-and-adrs | 文档和架构决策记录 |
-| as-doubt-driven-development | 质疑驱动开发：高风险决策前先对抗审查 |
-| as-frontend-ui-engineering | 生产级前端 UI 构建 |
-| as-idea-refine | 想法精炼：发散→收敛 |
-| as-incremental-implementation | 增量交付：大改动拆小步 |
-| as-interview-me | 用户意图深度挖掘 |
-| as-observability-and-instrumentation | 可观测性：日志、指标、追踪 |
-| as-performance-optimization | 性能优化 |
-| as-security-and-hardening | 安全加固 |
-| as-shipping-and-launch | 生产发布准备 |
-| as-source-driven-development | 基于官方文档的实现 |
-| as-spec-driven-development | 先写 spec 再写代码 |
-| as-using-agent-skills | 技能发现和调用的元技能 |
+涵盖：API设计、浏览器测试、CI/CD、代码简化、上下文工程、废弃迁移、文档ADR、质疑驱动开发、前端UI、想法精炼、增量交付、意图挖掘、可观测性、性能优化、安全加固、生产发布、源码驱动、规格驱动等。
 
-### 📐 规范层 — mp-*（12个，mattpocock/skills）
+### 📐 规范层 — mp-*（6个）
 
-TypeScript 领域顶级编码规范，统一前后端代码风格。
+TypeScript 领域顶级编码规范，按工程/生产力/杂项/个人/进行中/废弃分类。
 
-| 技能 | 用途 |
-|------|------|
-| mp-codebase-design | 深度模块设计 |
-| mp-domain-modeling | 领域建模和统一语言 |
-| mp-grilling | 方案压力测试 |
-| mp-grill-with-docs | 压力测试 + 自动产出 ADR |
-| mp-handoff | 会话交接文档生成 |
-| mp-improve-codebase-architecture | 架构改进建议报告 |
-| mp-prototype | 一次性原型验证 |
-| mp-resolving-merge-conflicts | Git merge 冲突解决 |
-| mp-teach | 教学新技能或概念 |
-| mp-to-prd | 对话转 PRD |
-| mp-triage | Issue/PR 分诊 |
-| mp-writing-great-skills | 编写优质 skill 的参考 |
+### 🛡️ 全栈专项 — ecc-*（277个）
 
-### 🛡️ 专项层 — ecc-*（8个，affaan-m/ECC ⭐）
+覆盖 20+ 技术栈的完整最佳实践：
 
-全栈工程最佳实践，覆盖后端、数据库、Docker、Python。
+**语言/框架**: Python、TypeScript、Go、Rust、Java、Kotlin、Swift、C++、C#、F#、Perl、Dart/Flutter、Vue、React、Next.js、Nuxt、Angular、NestJS、Django、Laravel、Spring Boot、FastAPI、Quarkus、Prisma、Express
 
-| 技能 | 用途 |
-|------|------|
-| ecc-backend-patterns | 后端架构模式 |
-| ecc-database-migrations | 数据库迁移最佳实践 |
-| ecc-docker-patterns | Docker 模式 |
-| ecc-error-handling | 跨语言错误处理 |
-| ecc-fastapi-patterns | FastAPI 最佳实践 |
-| ecc-github-ops | GitHub 运维操作 |
-| ecc-mcp-server-patterns | MCP Server 构建 |
-| ecc-python-patterns | Python 编码规范 |
+**基础设施**: Docker、Kubernetes、PostgreSQL、MySQL、Redis、ClickHouse、GraphQL
 
-### 🕸️ 克隆层 — awc-*（1个）
+**工程实践**: TDD、代码评审、安全加固、性能优化、API设计、数据库迁移、CI/CD、可观测性、部署模式
+
+**AI/ML**: PyTorch、DSPy、vLLM、RLHF/DPO/GRPO、GGUF量化、LoRA微调
+
+**安全**: OWASP、HIPAA、供应链安全、密钥管理
+
+### 🕸️ 网站克隆 — awc-*（1个）
 
 | 技能 | 用途 |
 |------|------|
@@ -112,25 +86,18 @@ TypeScript 领域顶级编码规范，统一前后端代码风格。
 bash /tmp/mischief-production/uninstall.sh
 ```
 
-只删除 symlink，不影响源文件。
-
 ## ⚡ 工作原理
 
-Hermes Agent 每次对话时自动扫描 `~/.hermes/skills/` 下所有已注册 skill 的名称和描述，根据用户意图**按需加载**。54 个 skill 不会同时占用上下文，只在匹配时才激活。
+Hermes Agent 每次对话时自动扫描 `~/.hermes/skills/` 下所有已注册 skill 的名称和描述，根据用户意图**按需加载**。322 个 skill 不会同时占用上下文，只在匹配时才激活。
 
-安装脚本通过 symlink 将仓库中的 skill 链接到 `~/.hermes/skills/`，Hermes 自动发现。
+安装脚本将仓库中的 skill 复制到 `~/.hermes/skills/`，Hermes 自动发现。
 
 ## 📝 更新
 
 ```bash
-cd /tmp/mischief-production && git pull
+cd /tmp/mischief-production && git pull && bash install.sh --force
 ```
 
 ## 📄 License
 
-各 skill 遵循原仓库许可证：
-- sp-*: MIT (obra/superpowers)
-- as-*: MIT (addyosmani/agent-skills)
-- mp-*: MIT (mattpocock/skills)
-- ecc-*: MIT (affaan-m/ECC)
-- awc-*: MIT (ai-website-cloner-template)
+各 skill 遵循原仓库许可证。
